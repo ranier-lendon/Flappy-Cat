@@ -1,0 +1,31 @@
+{
+  "name": "flappy_cat",
+  "main": "main.js",
+  "productName": "Flappy Cat",
+  "description": "Flappy Cat",
+  "author": "BuiltByDon",
+  "version": "1.0.0",
+  "dependencies": {
+    "@electron/remote": "^2.0.8"
+  },
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "18.2.2",
+    "electron-builder": "^22.11.11"
+  },
+  "build": {
+    "appId": "com.builtByDon.flappyCat",
+    "win": {
+      "target": ["nsis", "portable"]
+    },
+    "extraFiles": [
+      "LICENSE.GDevelop.txt"
+    ],
+    "directories": {
+      "buildResources": "buildResources"
+    }
+  }
+}
